@@ -1,0 +1,54 @@
+.body {
+  background-image: url('media/poster.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+}
+
+div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#bodyDiv {
+  padding-top: 20vh;
+  padding-bottom: 2vh;
+}
+
+input {
+  background: transparent;
+  width: 20vw;
+  height: 20vh;
+  margin: 0 5px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+  text-align: center;
+  font-size: 7vw;
+  color:darkgrey;
+}
+input:focus {
+  outline: none;
+}
+
+.error {
+  position: relative;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% { left: -5px; }
+  100% { right: -5px; }
+}
+
+button {
+  width: 60%;
+  height: 10vh;
+  font-size: 5vh;
+  border-radius: 5px;
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+  color:darkgrey;
+}
